@@ -1,13 +1,11 @@
 import { config } from './config/config.js';
 import { GoogleAPI } from './services/google-api.js';
 import { MessageHandler } from './utils/message-handler.js';
-import { DropdownMenu } from './utils/dropdown-menu.js';
 
 class App {
   constructor() {
     this.googleAPI = new GoogleAPI();
     this.messageHandler = new MessageHandler(document.getElementById('chat-container'));
-    this.dropdownMenu = new DropdownMenu();
 
     this.userInput = document.getElementById('user-input');
     this.sendButton = document.getElementById('send-button');
