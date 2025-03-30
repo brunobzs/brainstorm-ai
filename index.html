@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainstorm AI - Chatbot API</title>
+    <link rel="icon" type="image/x-icon" href="src/img/favicon.png">
+    <link rel="stylesheet" href="src/css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="src/img/brainstorm_logo.png" alt="Brainstorm AI Logo">
+      </div>
+      <nav>
+        <a href="#docs">Documentation</a>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <div class="hero">
+        <h2>Powerful AI Chatbot API for Your Applications</h2>
+        <p>Integrate intelligent conversation capabilities into your products with our flexible and powerful AI chatbot API. Choose from different models to suit your specific needs.</p>
+      </div>
+
+      <div class="api-container">
+        <div class="chat-header">
+          <div class="chat-title">
+            <div class="status" id="api-status"></div>
+            <span>Brainstorm AI Assistant</span>
+          </div>
+          <div class="api-version">v2.0.0</div>
+        </div>
+
+        <div class="chat-body" id="chat-container">
+          <div class="message bot-message">
+            Hello! I'm Brainstorm AI Assistant. How can I help you today?
+          </div>
+        </div>
+
+        <div class="chat-footer">
+          <div class="api-selector">
+            <div class="select-box" id="modelSelector">
+              <span>Gemini 1.5-flash</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+            </div>
+            <div class="select-options" id="modelOptions">
+              <div class="option">Open AI V1</div>
+            </div>
+          </div>
+
+          <div class="chat-input">
+            <input id="user-input" type="text" placeholder="Type your message here...">
+            <button id="send-button" class="send-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="features" id="features">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm.25-14.75v1.5a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 1.5 0Zm0 13v-1.5a.75.75 0 0 1-1.5 0v1.5a.75.75 0 0 1 1.5 0ZM1.5 8.75h1.5a.75.75 0 0 1 0 1.5H1.5a.75.75 0 0 1 0-1.5ZM14.5 9.5h-1.5a.75.75 0 0 1 0-1.5h1.5a.75.75 0 0 1 0 1.5ZM2.97 2.97a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L2.97 4.03a.75.75 0 0 1 0-1.06ZM12.94 11.94a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06ZM11.94 2.97a.75.75 0 0 1 0 1.06L10.88 5.09a.75.75 0 0 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0ZM2.97 12.94a.75.75 0 0 1 0-1.06l1.06-1.06a.75.75 0 0 1 1.06 1.06l-1.06 1.06a.75.75 0 0 1-1.06 0Z"/>
+            </svg>
+          </div>
+          <h3>Multiple API Models</h3>
+          <p>Choose from different specialized AI models tailored for customer service, creative content, scientific applications, and enterprise needs.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+              <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z"/>
+            </svg>
+          </div>
+          <h3>Simple Integration</h3>
+          <p>Implement our API in minutes with comprehensive documentation, code examples, and SDKs for major programming languages.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5Z"/>
+            </svg>
+          </div>
+          <h3>High Performance</h3>
+          <p>Our API provides fast response times, high availability, and scales effortlessly as your usage grows.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Brainstorm AI. All rights reserved.</p>
+    </footer>
+    <script type="module" src="src/js/app.js"></script>
+  </body>
+</html>
