@@ -32,11 +32,13 @@ class App {
     try {
       const status = await this.googleAPI.apiStatus()
       if (status === 200) {
+        this.apiStatus.setAttribute('title', 'Online');
         this.apiStatus.style.backgroundColor = 'var(--light-green)';
       } else {
         throw new Error('API offline');
       }
     } catch (error) {
+      this.apiStatus.setAttribute('title', 'Offline');
       this.apiStatus.style.backgroundColor = 'var(--light-red)';
     }
   }
