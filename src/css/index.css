@@ -64,7 +64,7 @@ nav a {
   border-radius: 30px;
 }
 
-nav a:hover {
+nav a:hover, nav a.active  {
   background-color: rgba(255, 255, 255, 0.2);
 }
 

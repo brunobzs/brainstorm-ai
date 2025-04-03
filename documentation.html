@@ -22,377 +22,73 @@
 <div class="container">
   <aside class="sidebar">
     <div class="sidebar-section">
-      <div class="sidebar-title">Getting Started</div>
+      <div class="sidebar-title">Project</div>
       <ul class="sidebar-links">
-        <li><a href="#introduction" class="sidebar-link active">Introduction</a></li>
-        <li><a href="#quick-start" class="sidebar-link">Quick Start Guide</a></li>
-        <li><a href="#authentication" class="sidebar-link">Authentication</a></li>
-        <li><a href="#rate-limits" class="sidebar-link">Rate Limits</a></li>
+        <li><a href="#overview" class="sidebar-link active">Overview</a></li>
+        <li><a href="#project-objective" class="sidebar-link">Project Objective</a></li>
+        <li><a href="#repo-structure" class="sidebar-link">Repository Structure</a></li>
+        <li><a href="#core-techs" class="sidebar-link">Core Technologies</a></li>
       </ul>
     </div>
-
     <div class="sidebar-section">
-      <div class="sidebar-title">API Models</div>
+      <div class="sidebar-title">About me</div>
       <ul class="sidebar-links">
-        <li><a href="#models-overview" class="sidebar-link">Models Overview</a></li>
-        <li><a href="#standard-model" class="sidebar-link">Standard Model</a></li>
-        <li><a href="#pro-model" class="sidebar-link">Pro Model</a></li>
-        <li><a href="#scientific-model" class="sidebar-link">Scientific Model</a></li>
-        <li><a href="#creative-model" class="sidebar-link">Creative Model</a></li>
-        <li><a href="#enterprise-model" class="sidebar-link">Enterprise Model</a></li>
-      </ul>
-    </div>
-
-    <div class="sidebar-section">
-      <div class="sidebar-title">API Reference</div>
-      <ul class="sidebar-links">
-        <li><a href="#chat-endpoint" class="sidebar-link">Chat Endpoint</a></li>
-        <li><a href="#completion-endpoint" class="sidebar-link">Completion Endpoint</a></li>
-        <li><a href="#embedding-endpoint" class="sidebar-link">Embedding Endpoint</a></li>
-        <li><a href="#moderation-endpoint" class="sidebar-link">Moderation Endpoint</a></li>
-        <li><a href="#fine-tuning" class="sidebar-link">Fine-tuning API</a></li>
-      </ul>
-    </div>
-
-    <div class="sidebar-section">
-      <div class="sidebar-title">Guides</div>
-      <ul class="sidebar-links">
-        <li><a href="#best-practices" class="sidebar-link">Best Practices</a></li>
-        <li><a href="#prompt-engineering" class="sidebar-link">Prompt Engineering</a></li>
-        <li><a href="#error-handling" class="sidebar-link">Error Handling</a></li>
-        <li><a href="#streaming" class="sidebar-link">Streaming Responses</a></li>
-        <li><a href="#webhooks" class="sidebar-link">Webhooks</a></li>
-      </ul>
-    </div>
-
-    <div class="sidebar-section">
-      <div class="sidebar-title">SDKs & Libraries</div>
-      <ul class="sidebar-links">
-        <li><a href="#javascript-sdk" class="sidebar-link">JavaScript / Node.js</a></li>
-        <li><a href="#python-sdk" class="sidebar-link">Python</a></li>
-        <li><a href="#java-sdk" class="sidebar-link">Java</a></li>
-        <li><a href="#ruby-sdk" class="sidebar-link">Ruby</a></li>
-        <li><a href="#php-sdk" class="sidebar-link">PHP</a></li>
+        <li><a href="https://brunobzs.github.io/my-resume/" class="sidebar-link">My resume</a></li>
+        <li><a href="https://www.linkedin.com/in/brunocarvalhoeng/" class="sidebar-link">Linked In</a></li>
       </ul>
     </div>
   </aside>
 
   <main class="main-content">
-    <section id="introduction" class="doc-section">
-      <h2>Introduction to Brainstorm AI API</h2>
-      <p>Welcome to the Brainstorm AI API documentation. Our API provides powerful AI chatbot capabilities that can be integrated into your applications, websites, and services. With multiple specialized models, you can tailor the AI's behavior to your specific use case.</p>
-
-      <p>Brainstorm AI offers natural language understanding and generation capabilities that enable your applications to engage in meaningful conversations with users, answer questions, generate content, process text, and much more.</p>
-
+    <section id="overview" class="doc-section">
+      <h2>Overview</h2>
+      <p><strong>Brainstorm AI</strong> is an AI-powered platform to support creative thinking and idea generation. This project contains the source code and resources needed to implement and use this AI-powered tool.</p>
       <div class="alert info">
-        <strong>Note:</strong> This documentation covers the Brainstorm AI API v2.5.0. If you're using an older version, some features and endpoints may not be available.
+        <p>The fundamental idea of the project is to <strong>develop programming and API usage skills</strong>, using integration with artificial intelligence systems as a practical and educational context. The project serves as a laboratory to improve technical skills while creating a useful tool for creative processes.</p>
       </div>
+    </section>
 
-      <h3>Key Features</h3>
+    <section id="project-objective" class="doc-section">
+      <h2>Project Objective</h2>
+      <p>The main goal of Brainstorm AI is to democratize the brainstorming and idea generation process by using AI algorithms to help users:</p>
       <ul>
-        <li><strong>Multiple Specialized Models</strong> - Choose from five different AI models optimized for various use cases</li>
-        <li><strong>RESTful API</strong> - Simple HTTP requests with JSON responses</li>
-        <li><strong>Streaming Support</strong> - Stream responses for real-time interactions</li>
-        <li><strong>Robust SDKs</strong> - Libraries available for major programming languages</li>
-        <li><strong>Fine-tuning</strong> - Customize models with your own data</li>
-        <li><strong>Moderation</strong> - Built-in content moderation capabilities</li>
-        <li><strong>High Availability</strong> - 99.99% uptime guarantee with enterprise plans</li>
+        <li>Expand and explore initial concepts</li>
+        <li>Overcome creative blocks</li>
+        <li>Generate non-obvious connections between ideas</li>
+        <li>Facilitate more productive brainstorming sessions</li>
+        <li>Document and organize ideas efficiently</li>
       </ul>
     </section>
 
-    <section id="quick-start" class="doc-section">
-      <h2>Quick Start Guide</h2>
-      <p>Follow these steps to start using the Brainstorm AI API in your application:</p>
+    <section id="repo-structure" class="doc-section">
+      <h2>Repository Structure</h2>
+      <p>The <a href="https://github.com/brunobzs/brainstorm-ai">repository</a> is organized as follows:</p>
 
-      <h3>1. Sign Up for an API Key</h3>
-      <p>Create an account on the <a href="#">Brainstorm AI Dashboard</a> and generate an API key.</p>
-
-      <h3>2. Install the SDK (Optional)</h3>
-      <p>While you can use any HTTP client to interact with our API, we recommend using one of our official SDKs:</p>
-
-      <div class="code-block">
-        <div class="code-header">npm</div>
-        <pre>npm install brainstorm-ai-sdk</pre>
-      </div>
-
-      <div class="code-block">
-        <div class="code-header">pip</div>
-        <pre>pip install brainstorm-ai</pre>
-      </div>
-
-      <h3>3. Make Your First API Call</h3>
-      <p>Here's a simple example of how to use the Chat API:</p>
-
-      <div class="code-block">
-        <div class="code-header">JavaScript</div>
-        <pre>const Brainstorm = require('brainstorm-ai-sdk');
-
-// Initialize with your API key
-const brainstorm = new Brainstorm('your-api-key');
-
-// Send a chat request
-async function getResponse() {
-  const response = await brainstorm.chat.create({
-    model: 'standard',
-    messages: [
-      { role: 'user', content: 'Hello, how can you help me today?' }
-    ]
-  });
-
-  console.log(response.choices[0].message.content);
-}
-
-getResponse();</pre>
-      </div>
-
-      <div class="code-block">
-        <div class="code-header">Python</div>
-        <pre>import brainstorm_ai as brainstorm
-
-# Initialize with your API key
-client = brainstorm.Client(api_key="your-api-key")
-
-# Send a chat request
-response = client.chat.create(
-    model="standard",
-    messages=[
-        {"role": "user", "content": "Hello, how can you help me today?"}
-    ]
-)
-
-print(response.choices[0].message.content)</pre>
+      <div class="structure">
+        <pre>
+          brainstorm-ai/
+          ├── backend/             # Código do servidor e API
+          ├── frontend/            # Interface de usuário
+          ├── models/              # Modelos de IA e prompts
+          ├── database/            # Estruturas de banco de dados
+          ├── docs/                # Documentação adicional
+          ├── tests/               # Testes automatizados
+          ├── LICENSE              # Informações de licenciamento
+          └── README.md            # Visão geral do projeto
+        </pre>
       </div>
     </section>
 
-    <section id="authentication" class="doc-section">
-      <h2>Authentication</h2>
-      <p>All API requests must include your API key for authentication. You can manage your API keys in the <a href="#">Brainstorm AI Dashboard</a>.</p>
-
-      <h3>API Key Authentication</h3>
-      <p>Include your API key in the request headers:</p>
-
-      <div class="code-block">
-        <div class="code-header">HTTP Header</div>
-        <pre>Authorization: Bearer YOUR_API_KEY</pre>
-      </div>
-
-      <div class="alert danger">
-        <strong>Security Warning:</strong> Protect your API keys and never expose them in client-side code. Always make API requests from your server.
-      </div>
-
-      <h3>API Key Rotation</h3>
-      <p>We recommend rotating your API keys periodically for enhanced security. You can generate multiple keys and gradually transition your applications to the new key before deleting the old one.</p>
-    </section>
-
-    <section id="models-overview" class="doc-section">
-      <h2>API Models Overview</h2>
-      <p>Brainstorm AI offers different models optimized for various use cases. Each model has different capabilities, pricing, and performance characteristics.</p>
-
-      <div class="model-card">
-        <div class="model-header">
-          <div class="model-name">Brainstorm Standard</div>
-          <div class="model-tag">General Purpose</div>
-        </div>
-        <p>Our baseline model offering a good balance of capabilities for general conversational AI applications. Ideal for customer service, simple Q&A, and basic content generation.</p>
-        <p><strong>Context Window:</strong> 8,000 tokens</p>
-        <p><strong>Max Output:</strong> 2,000 tokens</p>
-      </div>
-
-      <div class="model-card">
-        <div class="model-header">
-          <div class="model-name">Brainstorm Pro</div>
-          <div class="model-tag">Enhanced Performance</div>
-        </div>
-        <p>Advanced model with improved reasoning, context understanding, and response quality. Recommended for complex customer interactions, tutoring, and detailed responses.</p>
-        <p><strong>Context Window:</strong> 16,000 tokens</p>
-        <p><strong>Max Output:</strong> 4,000 tokens</p>
-      </div>
-
-      <div class="model-card">
-        <div class="model-header">
-          <div class="model-name">Brainstorm Scientific</div>
-          <div class="model-tag">Research & Analysis</div>
-        </div>
-        <p>Specialized for scientific, technical, and analytical domains. Excels at problem-solving, data analysis, and explaining complex concepts in STEM fields.</p>
-        <p><strong>Context Window:</strong> 24,000 tokens</p>
-        <p><strong>Max Output:</strong> 4,000 tokens</p>
-      </div>
-
-      <div class="model-card">
-        <div class="model-header">
-          <div class="model-name">Brainstorm Creative</div>
-          <div class="model-tag">Content Generation</div>
-        </div>
-        <p>Optimized for creative writing, storytelling, marketing copy, and other content generation tasks. Produces more engaging and diverse content.</p>
-        <p><strong>Context Window:</strong> 16,000 tokens</p>
-        <p><strong>Max Output:</strong> 8,000 tokens</p>
-      </div>
-
-      <div class="model-card">
-        <div class="model-header">
-          <div class="model-name">Brainstorm Enterprise</div>
-          <div class="model-tag">Maximum Capability</div>
-        </div>
-        <p>Our most powerful model with the best performance across all tasks. Features advanced reasoning, larger context windows, and improved output quality. Includes priority infrastructure for faster response times.</p>
-        <p><strong>Context Window:</strong> 32,000 tokens</p>
-        <p><strong>Max Output:</strong> 8,000 tokens</p>
-      </div>
-    </section>
-
-    <section id="chat-endpoint" class="doc-section">
-      <h2>Chat Endpoint</h2>
-      <p>The Chat API allows you to have interactive conversations with the AI model. It maintains context over multiple messages, enabling more natural and coherent dialogues.</p>
-
-      <div class="endpoint">
-        <span class="endpoint-method">POST</span>
-        <span class="endpoint-url">https://api.brainstorm.ai/v1/chat</span>
-      </div>
-
-      <h3>Request Parameters</h3>
-      <table class="parameter-table">
-        <thead>
-        <tr>
-          <th>Parameter</th>
-          <th>Type</th>
-          <th>Required</th>
-          <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>model</td>
-          <td>string</td>
-          <td>Yes</td>
-          <td>The model to use: "standard", "pro", "scientific", "creative", or "enterprise"</td>
-        </tr>
-        <tr>
-          <td>messages</td>
-          <td>array</td>
-          <td>Yes</td>
-          <td>An array of message objects representing the conversation history</td>
-        </tr>
-        <tr>
-          <td>temperature</td>
-          <td>number</td>
-          <td>No</td>
-          <td>Controls randomness: 0.0-1.0 (default: 0.7)</td>
-        </tr>
-        <tr>
-          <td>max_tokens</td>
-          <td>integer</td>
-          <td>No</td>
-          <td>The maximum number of tokens in the response</td>
-        </tr>
-        <tr>
-          <td>stream</td>
-          <td>boolean</td>
-          <td>No</td>
-          <td>Whether to stream the response (default: false)</td>
-        </tr>
-        </tbody>
-      </table>
-
-      <h3>Message Object Format</h3>
-      <table class="parameter-table">
-        <thead>
-        <tr>
-          <th>Parameter</th>
-          <th>Type</th>
-          <th>Required</th>
-          <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>role</td>
-          <td>string</td>
-          <td>Yes</td>
-          <td>Either "system", "user", or "assistant"</td>
-        </tr>
-        <tr>
-          <td>content</td>
-          <td>string</td>
-          <td>Yes</td>
-          <td>The content of the message</td>
-        </tr>
-        </tbody>
-      </table>
-
-      <h3>Example Request</h3>
-      <div class="code-block">
-        <div class="code-header">JSON</div>
-        <pre>{
-  "model": "standard",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a helpful customer service assistant."
-    },
-    {
-      "role": "user",
-      "content": "I need help tracking my order #12345."
-    }
-  ],
-  "temperature": 0.7,
-  "max_tokens": 500
-}</pre>
-      </div>
-
-      <h3>Example Response</h3>
-      <div class="code-block">
-        <div class="code-header">JSON</div>
-        <pre>{
-  "id": "chat-3d8f6a2c7b9e",
-  "object": "chat.completion",
-  "created": 1715521342,
-  "model": "standard",
-  "choices": [
-    {
-      "index": 0,
-      "message": {
-        "role": "assistant",
-        "content": "I'd be happy to help you track your order #12345. To provide you with the most accurate information, I'll need to check our system. Could you please confirm your email address or the name associated with the order? Once I have that information, I can look up the current status of your order."
-      },
-      "finish_reason": "stop"
-    }
-  ],
-  "usage": {
-    "prompt_tokens": 36,
-    "completion_tokens": 62,
-    "total_tokens": 98
-  }
-}</pre>
-      </div>
-    </section>
-
-    <section id="best-practices" class="doc-section">
-      <h2>Best Practices</h2>
-      <p>Follow these guidelines to get the most out of the Brainstorm AI API:</p>
-
-      <h3>Prompt Engineering</h3>
-      <p>The quality of your prompts significantly affects the quality of the responses. Here are some tips:</p>
-
+    <section id="core-techs" class="doc-section">
+      <h2>Core Technologies</h2>
+      <p>Brainstorm AI likely utilizes the following technologies:</p>
       <ul>
-        <li><strong>Be specific and clear</strong> in your instructions.</li>
-        <li><strong>Provide examples</strong> of desired outputs when possible.</li>
-        <li><strong>Use system messages</strong> to set the behavior and tone of the assistant.</li>
-        <li><strong>Break complex tasks</strong> into smaller, manageable steps.</li>
-        <li><strong>Experiment with temperature</strong> settings to find the right balance between creativity and determinism.</li>
+        <li><strong>Backend: </strong>Javascript</li>
+        <li><strong>Frontend: </strong>HTML5</li>
+        <li><strong>API: </strong>Google AI API, Gemini 1.5-flash</li>
       </ul>
-
-      <h3>Optimizing Token Usage</h3>
-      <p>Token optimization can help reduce costs and improve performance:</p>
-
-      <ul>
-        <li><strong>Limit conversation history</strong> by summarizing or removing older messages when they're no longer relevant.</li>
-        <li><strong>Set appropriate max_tokens</strong> limits to prevent unnecessarily verbose responses.</li>
-        <li><strong>Use the most appropriate model</strong> for your task rather than defaulting to the most powerful one.</li>
-        <li><strong>Structure your prompts efficiently</strong> to communicate the necessary information with fewer tokens.</li>
-      </ul>
-
-      <h3>Error Handling</h3>
-      <p>Implement robust error handling in your application:</p>
-
-      <ul>
-        <li><strong>Implement retry logic</strong> with exponential backoff for rate limit errors or temporary service issues.</li>
-        <li><strong>Validate user inputs
+    </section>
+  </main>
+</div>
+</body>
+</html>

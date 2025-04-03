@@ -168,108 +168,6 @@ nav a:hover, nav a.active {
     margin-bottom: 0.5rem;
 }
 
-.code-block {
-    background-color: var(--code-bg);
-    border-radius: var(--border-radius);
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    overflow-x: auto;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.9rem;
-    position: relative;
-}
-
-.code-block pre {
-    white-space: pre;
-}
-
-.code-header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba(39, 174, 96, 0.1);
-    border: 1px solid rgba(39, 174, 96, 0.2);
-    border-radius: 0 var(--border-radius) 0 var(--border-radius);
-    padding: 0.2rem 0.7rem;
-    font-size: 0.7rem;
-    color: var(--dark-green);
-}
-
-.parameter-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-}
-
-.parameter-table th, .parameter-table td {
-    border: 1px solid var(--border-color);
-    padding: 0.8rem;
-    text-align: left;
-}
-
-.parameter-table th {
-    background-color: rgba(38, 194, 129, 0.05);
-}
-
-.endpoint {
-    background-color: rgba(38, 194, 129, 0.05);
-    border-radius: var(--border-radius);
-    padding: 1rem;
-    margin: 1rem 0;
-    border-left: 4px solid var(--primary-green);
-}
-
-.endpoint-method {
-    display: inline-block;
-    padding: 0.3rem 0.6rem;
-    background-color: var(--primary-green);
-    color: var(--white);
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-right: 0.8rem;
-}
-
-.endpoint-url {
-    font-family: 'Fira Code', monospace;
-    font-weight: 500;
-}
-
-.model-card {
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    transition: var(--transition);
-}
-
-.model-card:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    border-color: var(--primary-green);
-}
-
-.model-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.model-name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--dark-text);
-}
-
-.model-tag {
-    padding: 0.2rem 0.5rem;
-    background-color: rgba(38, 194, 129, 0.1);
-    color: var(--primary-green);
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
 .alert {
     background-color: rgba(255, 193, 7, 0.1);
     border-left: 4px solid #ffc107;
@@ -293,54 +191,10 @@ nav a:hover, nav a.active {
     border-left-color: #dc3545;
 }
 
-.toc {
-    position: sticky;
-    top: 100px;
-    width: 220px;
-    margin-left: 2rem;
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    background-color: var(--white);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    max-height: calc(100vh - 120px);
-    overflow-y: auto;
-}
-
-.toc-title {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    padding-bottom: 0.8rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.toc-links {
-    list-style: none;
-}
-
-.toc-link {
-    margin-bottom: 0.5rem;
-}
-
-.toc-link a {
-    color: var(--light-text);
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: var(--transition);
-}
-
-.toc-link a:hover {
-    color: var(--primary-green);
-}
-
-.toc-link.level-2 {
-    margin-left: 1rem;
-    font-size: 0.85rem;
-}
-
-.toc-link.level-3 {
-    margin-left: 2rem;
-    font-size: 0.8rem;
+.structure {
+    background-color: #eaeaea;
+    border-radius: 4px;
+    padding: 15px;
 }
 
 @media (max-width: 1200px) {
