@@ -54,7 +54,7 @@ class App {
 
     const now = Date.now();
     if (now - this.lastRequestTime < config.RATE_LIMIT_DELAY) {
-      this.messageHandler.displayMessage('Por favor, aguarde um momento antes de enviar outra mensagem.', 'system');
+      this.messageHandler.displayMessage('Please wait a moment before sending another message.', 'system');
       return;
     }
 
@@ -70,10 +70,10 @@ class App {
       const history = this.messageHandler.getHistory();
       const botReply = await this.googleAPI.generateResponse(userMessage, history);
       loadingIndicator.remove();
-      this.messageHandler.displayMessage(botReply, 'bot');
+      this.messageHandler.displayMessage(marked.parse(botReply), 'bot');
     } catch (error) {
       loadingIndicator.remove();
-      this.messageHandler.displayMessage('Desculpe, ocorreu um erro ao processar sua mensagem.', 'bot');
+      this.messageHandler.displayMessage('Sorry, an error occurred while processing your message.', 'bot');
     } finally {
       this.isProcessing = false;
       this.toggleButtonState(false);

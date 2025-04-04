@@ -19,7 +19,7 @@ export class MessageHandler {
   displayMessage(message, sender) {
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('message', `${sender}-message`);
-    messageDiv.textContent = message;
+    messageDiv.innerHTML = marked.parse(message);
     this.chatContainer.appendChild(messageDiv);
     this.chatContainer.scrollTop = this.chatContainer.scrollHeight;
 
