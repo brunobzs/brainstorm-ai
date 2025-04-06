@@ -4,14 +4,10 @@ export class MessageHandler {
     this.messageHistory = [];
   }
 
-  sanitizeInput(input) {
-    return input.trim().replace(/<[^>]*>/g, '');
-  }
-
   showLoadingIndicator() {
     const loadingDiv = document.createElement('div');
     loadingDiv.classList.add('message', 'bot-message', 'loading');
-    loadingDiv.textContent = 'Digitando...';
+    loadingDiv.textContent = 'Typing...';
     this.chatContainer.appendChild(loadingDiv);
     return loadingDiv;
   }
@@ -19,7 +15,7 @@ export class MessageHandler {
   displayMessage(message, sender) {
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('message', `${sender}-message`);
-    messageDiv.textContent = message;
+    messageDiv.innerHTML = DOMPurify.sanitize(marked.parse(message));
     this.chatContainer.appendChild(messageDiv);
     this.chatContainer.scrollTop = this.chatContainer.scrollHeight;
 
