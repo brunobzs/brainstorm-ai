@@ -3,7 +3,7 @@ import { config } from '../config/config.js';
 export class GoogleAPI {
   async generateResponse(text, history) {
     try {
-      const response = await fetch(`${config.GOOGLE_API_ENDPOINT}?key=${config.GOOGLE_API_KEY}`, {
+      const response = await fetch(`${config.GOOGLE_API_URL}?key=${config.GOOGLE_API_KEY}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ export class GoogleAPI {
   }
 
   async apiStatus() {
-    const response = await fetch(`${config.GOOGLE_API_ENDPOINT}?key=${config.GOOGLE_API_KEY}`, {
+    const response = await fetch(`${config.GOOGLE_API_URL}?key=${config.GOOGLE_API_KEY}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

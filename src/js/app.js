@@ -48,13 +48,13 @@ class App {
   }
 
   async handleSubmit() {
-    const userMessage = this.messageHandler.sanitizeInput(this.userInput.value);
+    const userMessage = this.userInput.value;
 
     if (!userMessage || this.isProcessing) return;
 
     const now = Date.now();
     if (now - this.lastRequestTime < config.RATE_LIMIT_DELAY) {
-      this.messageHandler.displayMessage('Por favor, aguarde um momento antes de enviar outra mensagem.', 'system');
+      this.messageHandler.displayMessage('Please wait a moment before sending another message.', 'system');
       return;
     }
 
@@ -73,7 +73,7 @@ class App {
       this.messageHandler.displayMessage(botReply, 'bot');
     } catch (error) {
       loadingIndicator.remove();
-      this.messageHandler.displayMessage('Desculpe, ocorreu um erro ao processar sua mensagem.', 'bot');
+      this.messageHandler.displayMessage('Sorry, an error occurred while processing your message.', 'bot');
     } finally {
       this.isProcessing = false;
       this.toggleButtonState(false);
