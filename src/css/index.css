@@ -144,12 +144,16 @@ nav a:hover, nav a.active  {
   margin-bottom: 1rem;
   border-radius: 18px;
   line-height: 1.4;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .bot-message {
   background-color: #e9f5ff;
   align-self: flex-start;
   border-bottom-left-radius: 5px;
+  max-width: 80%;
+  padding-left: 25px;
 }
 
 .user-message {
@@ -331,7 +335,8 @@ footer {
   }
 
   .send-btn {
-    display: none;
+    width: 100%;
+    padding: 0.75rem;
   }
 }
 
